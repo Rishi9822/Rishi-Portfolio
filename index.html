@@ -16,16 +16,17 @@
 </head>
 
 <body>
-
+    <!--Header Starts here-->
     <header>
+        <!--nav-->
         <nav>
             <div class="left"><img src="images/software_as_a_service_adjusted_no_bg.png" alt="">
                 <div>Rishi's Portfolio</div>
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="/">Services</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
@@ -33,9 +34,13 @@
             </div>
         </nav>
     </header>
-
+    <!--Header Ends here-->
+    <!--main Starts here-->
     <main>
-        <section class="" firstSection>
+        <!--first section Starts here-->
+        <!--<section id="home" firstSection>-->
+            <section class="firstSection">
+                <div id="home"> <br>
             <div class="leftSection">
                 Hi, My name is <span class="purple">Rishi</span>
                 <div>and I am focused and self-motivated </div>
@@ -48,9 +53,12 @@
             <div class="rightSection">
                 <img src="images/Photo.png.png" alt="profile photo">
             </div>
+        </div>
 
         </section>
+        <!--first section ends here-->
         <hr>
+        <!--Second section Starts here-->
         <section class="secondSection">
             <span class="text-gray">What I have done so far</span>
             <h1>Past Experience</h1>
@@ -84,7 +92,27 @@
                 </div>
             </div>
         </section>
+        <!--Second section ends here-->
+        <hr>
+        <!--third section starts here-->
+        <section class="thirdSection"> <br>
+            <div id="about"> <span>About Me </span></div>
+            <br><br>
+            <div class="adout-desc">Hello, My name is Rishi Patel and I'am second Year Computer Science Engineering Student.
+                I'am currently pursuing my B.Tech Degree in Computer Science and Engineering from K.D.K college of engineering, Nagpur.
+                I have learned the foundation in programming, problem-solving, and web technologies, which I will utilize fully
+                 in contributing to an organization. I am also learning continuously to keep pace with advancing technology in 
+                the industry. I will be able to develop innovative solutions through this approach. I have an eye for detail, 
+                adaptability, and efficiency in teamwork, so I deliver high-quality work within a deadline. I want to grow 
+                professionally, meet complex challenges, and, through my contribution to the success of any organization, 
+                project a positive impact.
+                <br><br>
+            </div>
+        </section>
+        <!--third section ends here-->
     </main>
+    <!--main ends here-->
+    <!--footer Starts here-->
     <footer>
         <div class="footer">
             <div class="footer-first">
@@ -92,16 +120,16 @@
             </div>
             <div class="footer-second">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="/"> Contact </a></li>
                 </ul>
             </div>
             <div class="footer-third">
                 <ul>
                     <li>Reach Me On</li><br><br>
-                    <li><img src="images/LinkedIn.png.jpeg" alt=""></li>
-                    <li><img src="images/GitHub.png.png" alt=""></li>
+                    <li><a href="www.linkedin.com/in/rishi-patel-091226291"><img src="images/LinkedIn.png.jpeg" alt="linkedin.com"></a></li>
+                    <li><a href="https://github.com/Rishi9822"><img src="images/GitHub.png.png" alt="github.com"></a></li>
                 </ul>
             </div>
         </div>
@@ -109,14 +137,15 @@
             Copyright &#169;rishisportfolio.com | All rights reserved
         </div>
     </footer>
+    <!--footer ends here-->
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
+   <!-- <script>
         var typed = new Typed('#element', {
             strings: ['Tech Enthusiast', 'Programmer', 'Web Developer'],
             typeSpeed: 50,
         });
-    </script>
+    </script>-->
 </body>
 
 
