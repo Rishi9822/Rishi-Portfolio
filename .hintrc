@@ -4,6 +4,18 @@
   ],
   "hints": {
     "meta-charset-utf-8": "off",
-    "meta-viewport": "off"
-  }
+    "meta-viewport": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 18.2",
+    "not safari <= 18.2"
+  ]
 }

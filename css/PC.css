@@ -4,11 +4,84 @@
 }
 
 @media (min-width: 1024px) {
-    body {
+   /* body elements */
+    /*body {
         background-color: #020117;
         color: rgb(241, 237, 237);
-    }
-
+    }*/
+/* From Uiverse.io by themrsami */ 
+body {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: #0f172a;
+    background-image: linear-gradient(
+        45deg,
+        rgba(59, 130, 246, 0.08) 25%,
+        transparent 25%,
+        transparent 75%,
+        rgba(59, 130, 246, 0.08) 75%
+      ),
+      linear-gradient(
+        -45deg,
+        rgba(59, 130, 246, 0.08) 25%,
+        transparent 25%,
+        transparent 75%,
+        rgba(59, 130, 246, 0.08) 75%
+      ),
+      linear-gradient(
+        45deg,
+        transparent 40%,
+        rgba(99, 102, 241, 0.1) 40%,
+        rgba(99, 102, 241, 0.1) 60%,
+        transparent 60%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent 40%,
+        rgba(99, 102, 241, 0.1) 40%,
+        rgba(99, 102, 241, 0.1) 60%,
+        transparent 60%
+      ),
+      radial-gradient(circle at 50% 50%, #000000 0%, #000000 100%);
+    background-size:
+      60px 60px,
+      60px 60px,
+      120px 120px,
+      120px 120px,
+      100% 100%;
+    background-position:
+      0 0,
+      30px 30px,
+      0 0,
+      60px 60px,
+      0 0;
+    /*position: relative;*/
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px,
+        transparent 10px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px,
+        transparent 10px
+      );
+    background-size: 20px 20px;
+    filter: blur(0.5px);
+  }
+  /*universe io code ends*/
+  
     body,
     html {
         margin: 0;
@@ -16,28 +89,30 @@
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
-
+    /*nav elements */
     nav {
+        top: 0px;
+        position: sticky;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 70px;
-        background-color: #34495E;
+        height: 75px;
+        background-color: #0c1927;
+       
     }
-
-    header {
-        top: 0px;
-        z-index: 1000px;
+    header nav span{
+        font-size: 3rem;
+        color: rgb(227, 33, 33);
     }
 
     header nav .left img {
-        width: 14%;
-        margin: -25px -40px;
+        width: 20%;
+        margin: -20px -40px;
     }
 
     header nav .left div {
-        font-size: 1.4rem;
-        margin: -17px 30px;
+        font-size: 1.6rem;
+        margin: -30px 40px;
     }
 
     nav ul {
@@ -82,7 +157,8 @@
         width: 100%;
         left: 0;
     }
-
+    /*nav elements ends*/
+/*hr styling*/
     main hr {
         border: 0;
         background: #00a2ff;
@@ -101,9 +177,10 @@
         width: 50%;
     }
         */
+        /*First section's left block*/
     .leftSection {
-        font-size: 2.5rem;
-        width: 400px;
+        font-size: 3.5rem;
+        width: 500px;
         margin: 131px 50px;
         height: 10vw;
         color: #ffffff;
@@ -122,7 +199,7 @@
         font-size: 15px;
         cursor: pointer;
     }
-
+/*first section right block*/
     .rightSection {
         width: 400px;
         margin: 75px 55px;
@@ -151,10 +228,11 @@
     #element {
         color: rgb(0 201 201);
     }
-
+/*first section ends here*/
+/*Second section starts*/
     .secondSection {
         max-width: 80vw;
-        margin: auto;
+        margin: 30px 55px;
         height: 80vh;
         color: #fefefe;
     }
@@ -162,76 +240,134 @@
     .secondSection h1 {
         font-size: 1.9rem;
     }
-
-    .secondSection .box {
-        background: white;
-        width: 77vw;
-        height: 2px;
-        margin: 50px 0;
+    .secondSection .box-skills{
+        width: 110%;
+  height: 60vh;
+  padding: 10px;
+  border: 5px solid greenyellow;
+  margin: 65px 0px;
+    }
+    .secondSection img{
         display: flex;
+        width: 65px;
+        border-radius: 25%;
+       /* position: relative;
+        top: -30px;
+        left: 120px;*/
     }
-
-    .secondSection .vertical {
-        height: 93px;
-        width: 1px;
-        background-color: white;
-        margin: 0 120px;
+    .secondSection ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 70px 10px;
+        list-style: none;
+        width: fit-content;
     }
-
-    .image-top {
-        width: 23px;
-        position: relative;
-        top: -32px;
-        left: -9px;
+    .secondSection ul h2{
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: rgb(77, 116, 223);
     }
-
-    .vertical-title {
-        margin-top: 10vh;
-        top: 85px;
-        width: 150px;
-        font-size: 26px;
+    .secondSection ul li p span{
+        color: aquamarine;
     }
-
-    .verticle-desc {
-        position: relative;
-        margin-top: 200vh;
-        color: gray;
-        font-size: 6px;
+    .secondSection ul li p{
+        font-size: 1rem;
+        width: fit-content;
     }
-    /*thirdSection*/
+    .secondSection ul li{
+        width: fit-content;
+    }
+    /*second section ends*/
+    /*third section starts*/
     .thirdSection {
         max-width: 80vw;
         margin: auto;
-        height: 80vh;
+        height: 240vh;
         color: #fefefe;
         font-size: 1.5rem;
         text-align: justify;
     }
     #about span{
         display: flex;
-        color: aqua;
+        /*color: aqua;*/
         align-items: flex-start;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 1000;
     }
-    /*thirdSection end*/
-
+    .span1{
+        font-size: 2rem;
+        color: rgb(255 43 136);
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    .tab-titles span{
+        color: aqua;
+    }
+    .tab-links{
+        margin-right: 50px;
+        font-size: 35px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: red;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 50px 25px;
+        text-align: justify;
+    }
+    .tab-contents ul li img{
+        width: 50px;
+        margin: -10px 10px;
+    }
+    .tab-contents ul li span{
+        color:rgb(255, 0, 0);
+        font-size: 40px;
+        padding: 10px;
+    }
+    .tab-contents{
+        display: none;
+    }
+    .tab-contents.active-tab{
+        display: block;
+    }
+    
+    /*third section ends*/
+    /*Footer starts*/
     footer {
-        background-color: #2C3E50;
+        background-color: #0c1927;
+        position: relative;
     }
 
     .footer {
         display: flex;
-        padding: 23px 120px;
+        padding: 20px 0px;
         justify-content: space-evenly;
     }
 
     .footer ul {
         list-style: none;
         color: azure;
+        font-size: 1.8rem;
     }
 
     .footer>div {
         width: 230px;
+        font-size: 2rem;
     }
 
     footer .footer-rights {
@@ -244,13 +380,13 @@
         text-decoration: none;
     }
     div .footer-third ul li {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         display: inline;
         padding: 10px;
     }
 
     footer .footer-third ul img {
-        width: 20px;
+        width: 50px;
         background-color: none;
     }
 
@@ -261,3 +397,4 @@
         box-shadow: -2.5px -2.5px 20px 5px rgb(243, 84, 84);
     }
 }
+/*Footer ends*/
