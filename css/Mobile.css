@@ -235,7 +235,7 @@ body {
     .secondSection {
         max-width: 80vw;
         margin: auto;
-        height: 60vh;
+        height: 80vh;
         color: #fefefe;
     }
 
@@ -244,11 +244,11 @@ body {
     }
 
     .secondSection .box-skills{
-        width: 80%;
-  height: 200px;
+        width: 100%;
+  height: 65vh;
   padding: 10px;
   border: 5px solid greenyellow;
-  margin: 130px 100px;
+  margin: 130px 0px;
     }
     .secondSection img{
         display: flex;
