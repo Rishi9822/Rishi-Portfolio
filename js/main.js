@@ -4,7 +4,7 @@ var typed = new Typed('#element', {
     typeSpeed: 70,
 });
 
-
+// Skills and Education effect
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 function opentab(tabname) {

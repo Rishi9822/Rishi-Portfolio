@@ -145,7 +145,7 @@ body {
         width: 0;
         height: 2px;
         background-color: #fff;
-        transition: width 0.3s ease, left 0.3s ease;
+        transition: width 3s ease, left 3s ease;
     }
 
     nav ul li a:hover {
@@ -188,6 +188,7 @@ body {
 
     .leftSection .buttons {
         padding: 50px 0;
+        cursor: pointer;
     }
 
     .leftSection .btn {
@@ -197,7 +198,7 @@ body {
         border: 2px solid white;
         border-radius: 6px;
         font-size: 15px;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 /*first section right block*/
     .rightSection {
@@ -345,18 +346,182 @@ body {
     .tab-contents.active-tab{
         display: block;
     }
-    
     /*third section ends*/
+    /*fourthSection starts here */
+.fourthSection{
+    padding-top: 100px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.card {
+    width: 300px;
+    height: 400px;
+  
+    background: rgb(4, 26, 31);
+    transition: all 0.4s;
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px 5px  greenyellow;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .card:hover {
+    border-radius: 25%;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px  rgba(235, 87, 87, 0.705);
+    background: rgb(0, 0, 0);
+  }
+  
+  .first-content {
+    height: 95%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 25%;
+    font-size: 1rem;
+  }
+  
+  .card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  
+  .card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1rem;
+    transform: rotate(0deg);
+  }
+  .fourthSection img{
+    width: 85px;
+    border-radius: 25%;
+  }
+  .first-content span{
+    color: lightskyblue;
+    font-size: 1.4rem;
+  }
+  .second-content p{
+    /* font-size: 1.2rem; */
+    text-align: center;
+        margin: 20px 50px;
+    }
+  }
+.fourthSection-S{
+    margin: 10px 60px;
+}
+
+
+    /*fourthSection ends*/
+/*fifthSection starts*/
+/* From Uiverse.io by Bastiennnn */ 
+.fifthSection{
+    height: 110vh;
+    width: 100vw;
+}
+.fifthSection .span5{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 60px;
+}
+
+.item-card {
+    padding-top: 100px;
+    display: flex;
+}
+.card1 {
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 60px;
+    z-index: 1;
+    box-shadow: 0px 10px 60px aqua;
+    transition: 1.5s;
+    cursor: pointer;
+  }
+  
+  .card1:hover {
+    transform: translateY(20px);
+    box-shadow: 0px 10px 60px lightgreen;
+    border-radius: 25%;
+    background-color: #000000;
+  }
+  
+  .top1 {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .header1 {
+    margin: 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+  }
+  
+  #title2 {
+    color: crimson;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 30px;
+  }
+  
+  .code-container {
+    text-align: center;
+  }
+  #code {
+    margin-top: 30px;
+    width: 200px;
+    height: 250px;
+    resize: none;
+    /* background-color: rgb(57 46 125); */
+    background-color: #000000;
+    border-radius: 80px;
+    border: none;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+  #code:hover{
+    background-color: rgb(13, 44, 137);
+  }
+  #code:focus {
+    outline: none !important;
+  }
+  
+
+/*fifthSection ends*/
     /*Footer starts*/
     footer {
         background-color: #0c1927;
-        position: relative;
+        position: sticky;
+        bottom: 0px;
     }
 
     .footer {
         display: flex;
         padding: 20px 0px;
         justify-content: space-evenly;
+
     }
 
     .footer ul {
@@ -396,5 +561,5 @@ body {
         border: 2px solid;
         box-shadow: -2.5px -2.5px 20px 5px rgb(243, 84, 84);
     }
-}
+
 /*Footer ends*/
