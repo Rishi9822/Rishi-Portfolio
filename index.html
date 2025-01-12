@@ -20,8 +20,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="css/PC.css" media="screen and (min-width: 1024px)"/>
-    <link rel="stylesheet" href="css/Mobile.css" media="screen and (max-width: 1024px)"/>
+    <link rel="stylesheet" href="css/PC.css" media="screen and (min-width: 1024px)" />
+    <link rel="stylesheet" href="css/Mobile.css" media="screen and (max-width: 1024px)" />
 
     <title>Rishi Patel Portfolio</title>
 </head>
@@ -40,7 +40,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#Services">Services</a></li>
                     <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,8 +57,8 @@
                     <div>and I am focused and self-motivated </div>
                     <span id="element"></span>
                     <div class="buttons">
-                        <button class="btn">Download Resume</button>
-                        <button class="btn">Visit LinkedIn</button>
+                        <button class="btn">Contact Me</button>
+                        <!-- <button class="btn">Visit LinkedIn</button> -->
                     </div>
                 </div>
                 <div class="rightSection">
@@ -263,6 +263,38 @@
                 </div>
             </div>
         </section>
+        <hr>
+        <div id="contactme"></div>
+        <section class="sixthSection">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h4 class="sub-title">Contact Me</h4>
+                        <p><img src="images/mail.gif" alt="">   -rishipatel9822@gmail.com</p>
+                        <p><img src="images/call.gif" alt="">   -9226156845</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/rishi-patel-091226291"><img src="images/LinkedIn.png.png"
+                                alt="linkedin.com"></a>
+                                <a href="https://github.com/Rishi9822"><img src="images/GitHub.png.png" alt="github.com"></a>
+                        </div>
+                        <a href="RishiCV.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
     <!--main ends here-->
     <!--footer Starts here-->
@@ -275,7 +307,7 @@
                 <ul>
                     <li><a href="#home"> Home </a></li>
                     <li><a href="#about"> About </a></li>
-                    <li><a href="/"> Contact </a></li>
+                    <li><a href="#contactme"> Contact </a></li>
                 </ul>
             </div>
             <div class="footer-third">
