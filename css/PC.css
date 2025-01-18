@@ -84,12 +84,14 @@
     /*nav elements */
     nav {
         top: 0px;
-        position: sticky;
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 75px;
         background-color: #0c1927;
+        width: 100%;
+    position: fixed;
+    z-index: 100;
 
     }
 
