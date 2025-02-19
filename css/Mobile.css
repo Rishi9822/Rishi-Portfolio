@@ -1,10 +1,21 @@
 @media (max-width: 768px) {
-    body{
+    body {
         font-size: 1rem;
     }
-    #home{
-       flex-direction: column;
+
+    #home {
+        flex-direction: column;
     }
+
+    .leftSection {
+        width: 60%;
+        margin: 100px 0px;
+    }
+
+    .rightSection {
+        margin: 0;
+    }
+
     .rightSection img {
         width: 300px;
     }
