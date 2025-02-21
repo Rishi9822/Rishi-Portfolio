@@ -5,6 +5,17 @@ var typed = new Typed('#element', {
 });
 
 
+let menulist = document.getElementById("menu-list")
+menulist.style.maxHeight = "0px";
+function toggleMenu(){
+  if(menulist.style.maxHeight == "0px"){
+    menulist.style.maxHeight = "300px";
+  }
+  else{
+    menulist.style.maxHeight = "0px";
+  }
+}
+
 function bucket() {
   const contactSection = document.getElementById('contactme');
   contactSection.scrollIntoView({ behavior: 'smooth' });

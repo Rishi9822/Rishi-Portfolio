@@ -1,6 +1,34 @@
 @media (max-width: 768px) {
     body {
+        font-size: 1.2rem;
+    }
+    .menu-icon{
+        display:block;
+    }
+    #menu-list{
+        background: brown;
+        margin: 0px -50px;
+        transition: all 0.5s;
+    }
+    header nav .left img {
+        width: 30px;
+    }
+
+    header nav span {
+        font-size: 1.3rem;
+    }
+    header nav .left {
         font-size: 1rem;
+    }
+    
+    nav ul{
+        top: 75px;
+        gap: 20px;
+        font-size: 15px;
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
     }
 
     #home {
@@ -8,16 +36,52 @@
     }
 
     .leftSection {
-        width: 60%;
-        margin: 100px 0px;
+        font-size: 2rem;
+        width: 70%;
+        margin: 100px ;
+        margin-left: 5px;
     }
 
     .rightSection {
-        margin: 0;
+        margin-top: 0;
+        margin-left: -50px;
     }
 
     .rightSection img {
         width: 300px;
     }
 
+    .thirdSection{
+        font-size: 1rem;
+    }
+    .span1 {
+        font-size: 1.2rem;
+    }
+    .thirdSection span{
+        font-size: 1.4rem;
+    }
+    .thirdSection ul li span{
+        font-size: 1.4rem;
+    }
+
+    /* footer */
+    footer{
+        font-size: 10px;
+    }
+    .footer ul{
+        font-size: 10px;
+    }
+    .footer>div{
+        font-size: 20px;
+    }
+    div .footer-third ul li{
+        font-size: 10px;
+    }
+    footer .footer-third ul img {
+        width: 20px;
+    }
+    
+    footer .footer .footer-third img:hover {
+        transform: translateY(-5px);
+    }
 }

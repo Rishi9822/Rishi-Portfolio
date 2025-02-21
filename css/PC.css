@@ -150,6 +150,13 @@ nav ul li a:hover::after {
     left: 0;
 }
 
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    color: seashell;
+    font-size: 2.5rem;
+}
 /*nav elements ends*/
 /*hr styling*/
 main hr {
@@ -285,7 +292,7 @@ main hr {
     width: 80vw;
     margin: auto;
     color: #fefefe;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: justify;
 }
 
@@ -609,7 +616,7 @@ main hr {
 .btn.btn2:hover {
     transform: translateY(-5px);
     transition: 0.5s ease, 0.5s ease;
-    box-shadow: 0px 10px 20px #ff004f;
+    box-shadow: 0px 5px 5px #ff004f;
 }
 
 h4 {
@@ -669,12 +676,12 @@ footer {
 .footer ul {
     list-style: none;
     color: azure;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .footer>div {
     width: 230px;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 footer .footer-rights {
@@ -689,7 +696,7 @@ footer .footer-rights {
 }
 
 div .footer-third ul li {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     display: inline;
     padding: 10px;
 }
