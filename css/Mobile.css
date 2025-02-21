@@ -1,3 +1,11 @@
+@media (max-width:1024px) {
+    .row{
+        gap: 30px;
+    }
+    
+}
+
+
 @media (max-width: 768px) {
     body {
         font-size: 1.2rem;
@@ -63,7 +71,15 @@
     .thirdSection ul li span{
         font-size: 1.4rem;
     }
-
+    .row{
+        gap: 30px;
+    }
+.contact-left{
+    width: 80%;
+}
+    .contact-right{
+        width: 80%;
+    }
     /* footer */
     footer{
         font-size: 10px;
