@@ -155,7 +155,7 @@ nav ul li a:hover::after {
 }
 .menu-icon i{
     color: seashell;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 /*nav elements ends*/
 /*hr styling*/
@@ -232,60 +232,84 @@ main hr {
 
 /*first section ends here*/
 /*Second section starts*/
+.secondS{
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
 .secondSection {
-    width: fit-content;
-    margin: 0px 55px;
-    color: #fefefe;
+  justify-items: center;
 }
-
-.secondSection h1 {
-    font-size: 1.9rem;
-}
-
-.secondSection .box-skills {
-    width: 110%;
-    height: 60vh;
-    padding: 10px;
-    border: 5px solid greenyellow;
-    margin: 65px 0px;
-}
-
-.secondSection img {
+.section2{
     display: flex;
-    width: 65px;
-    border-radius: 25%;
-    /* position: relative;
-        top: -30px;
-        left: 120px;*/
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    align-self: center;
 }
 
-.secondSection ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 70px 10px;
-    list-style: none;
+/* From Uiverse.io by Creatlydev */ 
+.card2 {
+    margin: auto;
+    width: min(300px, 100%);
+    background-color: #fefefe;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #141417;
+  }
+  .card2 img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .card__hero {
+    background-color: #fef4e2;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 5px;
+    font-size: 0.875rem;
+    height: 170px;
     width: fit-content;
-}
+  }
 
-.secondSection ul h2 {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: rgb(77, 116, 223);
-}
-
-.secondSection ul li p span {
-    color: aquamarine;
-}
-
-.secondSection ul li p {
+  .card__footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.75rem;
+    row-gap: 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+  @media (min-width: 340px) {
+    .card__footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+  
+  .card__btn {
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
+    background-color: #141417;
+    color: #fff;
     font-size: 1rem;
-    width: fit-content;
-}
-
-.secondSection ul li {
-    width: fit-content;
-}
-
+  }
+  @media (min-width: 340px) {
+    .card__btn {
+      width: max-content;
+    }
+  }
+  
 /*second section ends*/
 /*third section starts*/
 .thirdSection {
