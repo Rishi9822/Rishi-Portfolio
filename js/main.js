@@ -36,7 +36,7 @@ function opentab(tabname) {
 }
 
 // Google sheet 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxBudlL0oggYBoVAL_TvC44jESBS6l89ZFKw2HqRJG8PNCLZg7bqiw5x5B8kq0AXD0W/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycby0bqjBY2GD_nq0MyJy7gg3YMQngB0GLhYVl_kYP9TpDFuDwaoEG4FsPebFt0YcOIt0/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 form.addEventListener('submit', e => {
