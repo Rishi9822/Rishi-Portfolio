@@ -4,17 +4,29 @@ var typed = new Typed('#element', {
   typeSpeed: 70,
 });
 
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("scrolled", window.scrollY > 10);
+  });
 
-let menulist = document.getElementById("menu-list")
-menulist.style.maxHeight = "0px";
-function toggleMenu(){
-  if(menulist.style.maxHeight == "0px"){
-    menulist.style.maxHeight = "300px";
+ let menulist = document.getElementById("menu-list");
+  menulist.style.maxHeight = "0px";
+
+  function toggleMenu() {
+    if (menulist.style.maxHeight === "0px") {
+      menulist.style.maxHeight = "600px"; // Increased height
+    } else {
+      menulist.style.maxHeight = "0px";
+    }
   }
-  else{
-    menulist.style.maxHeight = "0px";
-  }
-}
+  // Auto-hide menu when a link is clicked
+  document.querySelectorAll('#menu-list li a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        menulist.style.maxHeight = "0px";
+      }
+    });
+  });
 
 function bucket() {
   const contactSection = document.getElementById('contactme');
@@ -34,6 +46,30 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+function scrollSkills(direction) {
+  const slider = document.getElementById("skillsSlider");
+  if (direction === 1) {
+    slider.appendChild(slider.children[0]);
+  } else {
+    slider.insertBefore(slider.children[slider.children.length - 1], slider.children[0]);
+  }
+}
+
+// Scroll animation for education timeline
+const eduCards = document.querySelectorAll('.edu-card');
+function revealCards() {
+  eduCards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      card.classList.add('visible');
+    }
+  });
+}
+document.addEventListener('scroll', revealCards);
+document.addEventListener('DOMContentLoaded', revealCards);
+
 
 // Google sheet 
 const scriptURL = 'https://script.google.com/macros/s/AKfycby0bqjBY2GD_nq0MyJy7gg3YMQngB0GLhYVl_kYP9TpDFuDwaoEG4FsPebFt0YcOIt0/exec'

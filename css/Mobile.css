@@ -1,43 +1,116 @@
 @media (max-width:1024px) {
-    .row{
+    .row {
         gap: 30px;
     }
-    
+
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
     body {
         font-size: 1.2rem;
     }
-    .menu-icon{
-        display:block;
+
+    .menu-icon {
+        display: block;
+        z-index: 200;
+        cursor: pointer;
+        padding: 10px;
     }
-    #menu-list{
-        background: brown;
-        margin: 0px -50px;
-        transition: all 0.5s;
+
+    .menu-icon i {
+        font-size: 2.5rem;
+        color: #00f5d4;
+        transition: transform 0.3s ease;
     }
+
+    .menu-icon i:hover {
+        transform: rotate(90deg) scale(1.1);
+        color: #00d4ff;
+    }
+
+   #menu-list {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s ease-in-out;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  left: 0;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+    #menu-list li {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background 0.3s ease;
+        text-align: center;
+    }
+
+    #menu-list li:hover {
+        background: rgba(0, 255, 255, 0.08);
+    }
+
+    #menu-list li a {
+        color: #e6f7ff;
+        font-size: 1.3rem;
+        text-shadow: 0 0 2px #00f5d4;
+        transition: color 0.3s ease;
+        display: inline-block;
+        padding: 5px 15px;
+    }
+
+    #menu-list li a:hover {
+        color: #00f5d4;
+        text-shadow: 0 0 10px #00f5d4;
+    }
+
     header nav .left img {
         width: 30px;
+        transition: transform 0.3s ease;
     }
 
     header nav span {
         font-size: 1.3rem;
+        background: linear-gradient(90deg, #00f5d4, #00d4ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: neon-flicker 5s infinite linear;
     }
+
+    @keyframes neon-flicker {
+
+        0%,
+        100% {
+            text-shadow: 0 0 5px #00f5d4;
+        }
+
+        50% {
+            text-shadow: 0 0 20px #00f5d4;
+        }
+    }
+
     header nav .left {
         font-size: 1rem;
+        display: flex;
+        align-items: center;
     }
-    
-    nav ul{
-        top: 75px;
-        gap: 20px;
-        font-size: 15px;
-        position: absolute;
+
+    nav ul {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        overflow: hidden;
     }
+
 
     #home {
         flex-direction: column;
@@ -46,7 +119,7 @@
     .leftSection {
         font-size: 2rem;
         width: 70%;
-        margin: 100px ;
+        margin: 100px;
         margin-left: 5px;
     }
 
@@ -59,44 +132,55 @@
         width: 300px;
     }
 
-    .thirdSection{
+    .thirdSection {
         font-size: 1rem;
     }
+
     .span1 {
         font-size: 1.2rem;
     }
-    .thirdSection span{
+
+    .thirdSection span {
         font-size: 1.4rem;
     }
-    .thirdSection ul li span{
+
+    .thirdSection ul li span {
         font-size: 1.4rem;
     }
-    .row{
+
+    .row {
         gap: 30px;
     }
-.contact-left{
-    width: 80%;
-}
-    .contact-right{
+
+    .contact-left {
         width: 80%;
     }
+
+    .contact-right {
+        width: 80%;
+    }
+
     /* footer */
-    footer{
+    footer {
         font-size: 10px;
     }
-    .footer ul{
+
+    .footer ul {
         font-size: 10px;
     }
-    .footer>div{
+
+    .footer>div {
         font-size: 20px;
     }
-    div .footer-third ul li{
+
+    div .footer-third ul li {
         font-size: 10px;
     }
+
     footer .footer-third ul img {
         width: 20px;
     }
-    
+
     footer .footer .footer-third img:hover {
         transform: translateY(-5px);
     }

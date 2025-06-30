@@ -12,6 +12,9 @@
     <meta name="keywords" content="Rishi Patel, Rishi Patel portfolio" />
     <meta name="description" content="I'm Rishi Patel a second year Computer Science and Engineering student..." />
     <!-- meta tag ends -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/PC.css" />
     <link rel="stylesheet" href="css/Mobile.css" />
@@ -176,74 +179,85 @@
                     <p class="tab-links" onclick="opentab('education')"><span>Education</span></p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li>
-                            <img src="images/Html.png" alt=""><span>Html</span><br><br>I have a strong foundation in
-                            HTML and use it to create
-                            well-structured, semantic web pages.With HTML5, I ensure that my content is accessible,
-                            SEO-friendly, and easily readable.<br><br>
-                            I focus on writing clean, maintainable code that adheres to web standards. Whether building
-                            simple landing pages or
-                            complex site layouts, I structure the HTML to ensure optimal performance and accessibility
-                            across devices and browsers.
-                        </li>
-                        <li>
-                            <img src="images/CSS.png" alt=""><span>CSS</span><br><br>CSS is where I bring design to
-                            life, creating visually appealing
-                            and responsive layouts. I'm comfortable using modern techniques like Flexbox and CSS Grid to
-                            build flexible,
-                            mobile-friendly designs.<br><br>I also apply CSS transitions and animations to enhance
-                            interactivity. By employing
-                            best practices and tools like SASS, I ensure that my CSS is well-organized, scalable, and
-                            easy to maintain across projects.
-                        </li>
-                        <li>
-                            <img src="images/JS.gif" alt=""><span>JavaScript</span><br><br>JavaScript is a core
-                            programming language I use to make web pages
-                            interactive and dynamic. As a beginner, I am learning the fundamentals of JavaScript and
-                            including working with variables, functions,
-                            loops. I am gaining hands-on experience with simple tasks like
-                            validating forms, handling user input,
-                            and making websites more interactive with small scripts.
-                        </li>
-                        <li>
-                            <img src="images/Java.png" alt=""><span>Java</span><br><br>With an intermediate level of
-                            expertise, I have
-                            working with data structures and algorithms to solve problems
-                            efficiently.<br>I'm familiar with key Java concepts
-                            like multithreading, exception handling, and memory management. <br>
-                            I continue to deepen my knowledge of Java's extensive libraries and frameworks, improving my
-                            ability to build performance-oriented and maintainable software solutions.
-                        </li>
-                    </ul>
+                    <div class="skills-slider-container">
+                        <button class="scroll-btn left" onclick="scrollSkills(-1)">
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#00f5d4" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </button>
+
+                        <div class="skills-slider-wrapper">
+                            <div class="skills-slider" id="skillsSlider">
+                                <div class="skill-card"><img src="images/Java.png" alt="Java"><span>Java</span></div>
+                                <div class="skill-card"><img src="images/react.gif" alt="ReactJS"><span>ReactJS</span>
+                                </div>
+                                <div class="skill-card"><img src="images/JS.gif"
+                                        alt="JavaScript"><span>JavaScript</span></div>
+                                <div class="skill-card"><img src="images/github.png" alt="GitHub"><span>GitHub</span>
+                                </div>
+                                <div class="skill-card"><img src="images/node.png" alt="NodeJS"><span>NodeJS</span>
+                                </div>
+                                <div class="skill-card"><img src="images/Html.png" alt="HTML"><span>HTML</span></div>
+                                <div class="skill-card"><img src="images/CSS.png" alt="CSS"><span>CSS</span></div>
+                                <div class="skill-card"><img src="images/vite.png" alt="Vite"><span>Vite</span></div>
+                                <div class="skill-card"><img src="images/c.png" alt="C"><span>C</span></div>
+                                <div class="skill-card"><img src="images/mongodb.png" alt="MongoDB"><span>MongoDB</span>
+                                </div>
+                                <div class="skill-card"><img src="images/sql.png" alt="SQL"><span>SQL</span></div>
+                                <div class="skill-card"><img src="images/git.png" alt="Git"><span>Git</span></div>
+                            </div>
+                        </div>
+
+                        <button class="scroll-btn right" onclick="scrollSkills(1)">
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="#00f5d4" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>B.tech(Computer Science and Engineering)</span><br>K.D.K college of Engineering,
-                            Nagpur<br><br>
-                            Expected Graduation: 2027
-                            <br>I am currently pursuing a B.Tech in Computer Science and Engineering. Through my
-                            studies,
-                            I am learning core topics like programming, data structures, algorithms, and web
-                            development.
-                            <br>I am gaining hands-on experience with various technologies, which is helping me develop
-                            practical skills
-                            for the future.
-                        </li>
-                        <li>
-                            <span>Class XII(Science) - CBSE</span><br>Bharti Krishna Vidya Vihar<br>Completed in the
-                            year 2023<br><br>
-                            I completed my 12th grade with a focus on Science, including subjects like Physics,
-                            Mathematics, and
-                            Computer Science. This gave me a strong foundation in technical subjects and sparked my
-                            interest in
-                            pursuing a career in Computer Science.
-                        </li>
-                        <li><span>Class X - CBSE</span><br>Bharti Krishna Vidya Vihar <br><br>Completed in the year 2021
-                            <br>I completed my 10th grade with a focus on core subjects like Mathematics and Science.
-                            I completed my 10th grade with a focus on core subjects like Mathematics and Science.
-                        </li>
-                    </ul>
+                    <div class="education-timeline">
+                        <div class="edu-card">
+                            <div class="edu-dot" data-tooltip="B.Tech | 2023–2027"></div>
+                            <div class="edu-content">
+                                <h3>B.Tech (Computer Science & Engineering)</h3>
+                                <p>K.D.K College of Engineering, Nagpur</p>
+                                <span class="edu-year">Expected Graduation: 2027</span>
+                                <p class="edu-desc">Currently pursuing my B.Tech in CSE. I've developed a solid
+                                    foundation in programming, data structures, algorithms, and web development.
+                                    Constantly learning to stay updated with industry trends and contribute innovative
+                                    solutions.</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-dot"></div>
+                            <div class="edu-content">
+                                <h3>Class XII (Science) - CBSE</h3>
+                                <p>Bharti Krishna Vidya Vihar</p>
+                                <span class="edu-year">Completed: 2023</span>
+                                <p class="edu-desc">Focused on Science subjects: Physics, Mathematics, and Computer
+                                    Science. Built strong analytical and problem-solving skills, leading to my passion
+                                    for technology.</p>
+                            </div>
+                        </div>
+
+                        <div class="edu-card">
+                            <div class="edu-dot"></div>
+                            <div class="edu-content">
+                                <h3>Class X - CBSE</h3>
+                                <p>Bharti Krishna Vidya Vihar</p>
+                                <span class="edu-year">Completed: 2021</span>
+                                <p class="edu-desc">Established a strong academic foundation with emphasis on core
+                                    subjects. Developed curiosity for logical reasoning and structured problem solving.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
