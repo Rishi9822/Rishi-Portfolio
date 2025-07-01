@@ -45,24 +45,6 @@ body {
     /*position: relative;*/
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(45deg,
-            rgba(255, 255, 255, 0.03) 0px,
-            rgba(255, 255, 255, 0.03) 1px,
-            transparent 1px,
-            transparent 10px),
-        repeating-linear-gradient(-45deg,
-            rgba(255, 255, 255, 0.03) 0px,
-            rgba(255, 255, 255, 0.03) 1px,
-            transparent 1px,
-            transparent 10px);
-    background-size: 20px 20px;
-    filter: blur(0.5px);
-}
-
 /*universe io code ends*/
 
 body,
@@ -309,7 +291,7 @@ main hr {
 }
 
 .rightSection img {
-    width: 500px;
+    width: 450px;
     border-radius: 50%;
     background: linear-gradient(135deg, #ff4d6d, #00f5d4, #c77dff);
     border: 5px solid #2a3a52;
@@ -330,88 +312,225 @@ main hr {
 
 /*first section ends here*/
 /*Second section starts*/
-.secondS {
-    margin-left: 80px;
-    margin-bottom: 50px;
-}
 
-.secondSection {
-    justify-items: center;
+.projects-section {
+  padding: 0 2rem;
+  color: white;
 }
-
-.section2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 90%;
-    align-self: center;
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #00f5d4, #00d4f5);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
 }
-
-/* From Uiverse.io by Creatlydev */
-.card2 {
-    margin: auto;
-    width: min(300px, 100%);
-    background-color: #fefefe;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    color: #141417;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
-
-.card2 img {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.project-card {
+  position: relative;
+  animation: fadeInUp 1s ease-out both;
 }
-
-.card__hero {
-    background-color: 		#fef4e2;
-    border-radius: 0.5rem 0.5rem 0 0;
-    padding: 5px;
-    font-size: 0.875rem;
-    height: 170px;
-    width: fit-content;
+.card-glow {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
 }
-
-.card__footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
+.card-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.5s;
+  max-width: 390px;
+}
+.project-card:hover .card-content {
+  transform: translateY(-10px) scale(1.02);
+}
+.project-card:hover .card-glow {
+  opacity: 1;
+  filter: blur(20px);
+}
+.image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.7s ease;
+}
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+.image-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.project-card:hover .image-overlay {
+  opacity: 1;
+}
+.floating-buttons {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+.project-card:hover .floating-buttons {
+  opacity: 1;
+  transform: translateY(0);
+}
+.float-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.float-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+.card-body {
+  padding: 1.5rem;
+}
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.project-description {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.tech-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+.tech-blue {
+  background: linear-gradient(135deg, #00f5d4, #00d4f5);
+}
+.tech-green {
+  background: linear-gradient(135deg, #4ade80, #16a34a);
+}
+.tech-pink {
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+}
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: left 0.5s ease;
+}
+.btn:hover::before {
+  left: 100%;
+}
+.btn-primary {
+  background: linear-gradient(to right, #00f5d4, #00d4f5);
+  color: #000;
+}
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 798px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+  .action-buttons {
     flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 0.75rem;
-    row-gap: 1rem;
-    font-weight: 700;
-    font-size: 0.875rem;
-}
-
-@media (min-width: 340px) {
-    .card__footer {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-}
-
-.card__btn {
+  }
+  .btn {
     width: 100%;
-    font-weight: 400;
-    border: none;
-    display: block;
-    cursor: pointer;
-    text-align: center;
-    padding: 0.5rem 1.25rem;
-    border-radius: 1rem;
-    background-color: #141417;
-    color: #e6f7ff;
-    font-size: 1rem;
-}
-
-@media (min-width: 340px) {
-    .card__btn {
-        width: max-content;
-    }
+  }
+  .floating-buttons {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /*second section ends*/
