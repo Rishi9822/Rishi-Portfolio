@@ -87,3 +87,51 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+
+
+
+// particlesJS("particles-js", {
+//     particles: {
+//       number: { value: 100 },
+//       color: { value: "#00f5d4" },
+//       shape: { type: "circle" },
+//       opacity: { value: 0.4 },
+//       size: { value: 2 },
+//       line_linked: { enable: true, distance: 150, color: "#00f5d4", opacity: 0.2, width: 1 },
+//       move: { enable: true, speed: 2 }
+//     },
+//     interactivity: {
+//       events: { onhover: { enable: true, mode: "grab" } }
+//     }
+//   });
+
+ particlesJS("particles-js", {
+    particles: {
+      number: { value: 80 },
+      color: { value: "#00f5d4" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#00f5d4",
+        opacity: 0.4,
+        width: 1
+      },
+      move: { enable: true, speed: 2 }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "grab" }
+      },
+      modes: {
+        grab: {
+          distance: 200,
+          line_linked: { opacity: 0.5 }
+        }
+      }
+    },
+    retina_detect: true
+  });
