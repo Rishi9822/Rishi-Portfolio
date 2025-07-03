@@ -330,7 +330,7 @@
 
 
     /* footer */
-    footer {
+    /* footer {
         font-size: 10px;
     }
 
@@ -352,5 +352,5 @@
 
     footer .footer .footer-third img:hover {
         transform: translateY(-5px);
-    }
+    } */
 }
