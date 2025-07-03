@@ -557,27 +557,6 @@ main hr {
   }
 }
 
-@media screen and (max-width: 798px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-    justify-self: center;
-  }
-
-  .action-buttons {
-    flex-direction: column;
-  }
-
-  /* .btn {
-    width: 100%;
-  } */
-  .floating-buttons {
-    position: static;
-    justify-content: center;
-    margin-top: 1rem;
-    opacity: 1;
-    transform: none;
-  }
-}
 
 /*second section ends*/
 
@@ -912,7 +891,6 @@ main hr {
   height: 90%;
   position: absolute;
   border-radius: 20px;
-  /* background: rgba(14, 16, 34, 0.8); */
   box-shadow: 0 0 20px #00f5d4;
   backdrop-filter: blur(10px);
   transition: transform 0.8s ease, box-shadow 0.3s ease;
@@ -977,64 +955,12 @@ main hr {
   transform: scale(1.05);
 }
 
-/* === RESPONSIVE === */
-@media screen and (max-width: 798px) {
-  .cert-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .cert-card {
-    width: 100%;
-    max-width: 250px;
-    height: 350px;
-    perspective: 1000px;
-  }
-
-  .card-front,
-  .card-back {
-    height: 100%;
-    padding: 20px;
-    transform-style: preserve-3d;
-    margin-left: -15px;
-  }
-
-  .card-front img {
-    width: 60px;
-    margin-bottom: 15px;
-  }
-
-  .card-front h2 {
-    font-size: 1.1rem;
-  }
-
-  .card-front p {
-    font-size: 0.85rem;
-  }
-
-  .card-back p {
-    font-size: 0.85rem;
-    line-height: 1.4rem;
-  }
-
-  .verify-btn {
-    padding: 10px 15px;
-    font-size: 0.9rem;
-  }
-}
-
-
 
 /*fourthSection ends*/
 
 
 /*fifthSection starts*/
 
-/* .fifthSection {
-  padding: 4rem 2rem;
-  color: #fff;
-} */
 
 .section-heading {
   font-size: 2.8rem;
@@ -1133,149 +1059,199 @@ main hr {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 798px) {
-  .service-card {
-    width: 100%;
-    max-width: 70%;
-  }
-
-  .section-heading {
-    font-size: 2rem;
-  }
-}
-
 
 /*fifthSection ends*/
 
-/*SixthSection starts */
-.sixthSection {
-  justify-items: center;
-  align-items: center;
-  justify-self: center;
-}
 
+
+/*SixthSection starts */
+
+/* === Flex Container === */
 .row {
-  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 30px;
 }
 
-.contact-left {
-  margin: 0 20px;
-  border: 4px solid whitesmoke;
-  border-radius: 60px;
+/* === Animated Glassmorphic Card === */
+.glass-glow-card {
+  flex: 1;
+  min-width: 320px;
+  max-width: 480px;
   padding: 40px;
-  box-shadow: 0px 10px 60px rgb(84, 144, 144);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(255, 77, 109, 0.2);
+  transition: all 0.4s ease-in-out;
+  position: relative;
 }
 
-.contact-right {
-  width: 50%;
-  margin: 0 20px;
-  border: 4px solid whitesmoke;
-  border-radius: 60px;
-  padding: 40px;
-  box-shadow: 0px 10px 60px rgb(84, 144, 144);
+.glass-glow-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px #00ffd0, 0 0 80px #ff4d6d, inset 0 0 30px #ffffff1a;
 }
 
+/* === Title === */
+.sub-title {
+  font-size: 3.2rem;
+  color: #ff4d6d;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* === Contact Info === */
 .contact-left p {
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  font-size: 1.4rem;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
   gap: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 15px 0;
+  font-weight: 600;
 }
 
 .contact-left img {
-  width: 35px;
-  border-radius: 40%;
+  width: 30px;
+  border-radius: 50%;
 }
 
+/* === Social Icons === */
 .social-icons {
-  margin-top: 35px;
+  margin-top: 30px;
+}
+
+form {
+  width: 80%;
 }
 
 .social-icons a img {
-  text-decoration: none;
-  font-size: 30px;
+  width: 45px;
   margin-right: 15px;
-  color: #e6f7ff;
-  display: inline-block;
-  transition: transform 0.5s;
-  width: 50px;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 0 8px #00ffd0);
 }
 
 .social-icons a img:hover {
-  transform: translateY(-5px);
+  transform: scale(1.2) rotate(5deg);
 }
 
+/* === Button === */
 .btn.btn2 {
-  display: inline-block;
-  padding: 12px;
-  background: #08080d;
-  color: aliceblue;
-  border: 2px solid white;
-  border-radius: 20px;
-  font-size: 25px;
-  cursor: pointer;
+  margin-top: 40px;
+  padding: 14px 40px;
+  font-size: 20px;
+  border-radius: 30px;
   text-decoration: none;
-  margin-top: 50px;
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff4d6d, #00ffd0);
+  box-shadow: 0 0 20px #00ffd0;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn.btn2:hover {
-  transform: translateY(-5px);
-  transition: 0.5s ease, 0.5s ease;
-  box-shadow: 0px 5px 5px #ff4d6d;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ff4d6d, 0 0 50px #00ffd0;
 }
 
-h4 {
-  font-size: 4rem;
-  color: #ff4d6d;
+/* === Floating Label with Icon === */
+.floating-label {
+  position: relative;
+  margin-bottom: 30px;
 }
 
-.contact-right form {
-  width: 90%;
-}
-
-form input,
-form textarea {
+.floating-label input,
+.floating-label textarea {
   width: 100%;
-  border: 0;
+  padding: 16px 50px 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #00ffd0;
+  border-radius: 20px;
   outline: none;
-  background: #262626;
-  padding: 15px;
-  margin: 15px 0;
-  color: #e6f7ff;
-  font-size: 18px;
-  border-radius: 25px;
-  box-shadow: 10px 10px 20px rgb(151, 211, 211);
+  transition: 0.3s ease;
 }
 
-form input:focus,
-form textarea:focus {
-  box-shadow: 0 0 10px #00ffd0;
-  background-color: #1a1a1a;
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+.floating-label label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: 0.3s ease;
+  pointer-events: none;
+  background: #0a0a0a;
+  padding: 0 5px;
 }
 
-
-form .btn2 {
-  padding: 14px 50px;
-  font-size: 18px;
-  margin-top: 20px;
-  cursor: pointer;
+.floating-label input:focus+label,
+.floating-label input:not(:placeholder-shown)+label,
+.floating-label textarea:focus+label,
+.floating-label textarea:not(:placeholder-shown)+label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: #00ffd0;
 }
 
+.with-icon .icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #00ffd0;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+/* === Message Confirmation === */
 #msg {
+  margin-top: 20px;
   color: #61b752;
-  margin-top: 10px;
-  display: block;
+  font-size: 1rem;
+  text-shadow: 0 0 3px #00ffd0;
+}
+
+/* === Neon Pulse Effect === */
+.neon-pulse {
+  animation: neonPulse 2s infinite alternate;
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 15px #00ffd0;
+  }
+
+  100% {
+    box-shadow: 0 0 30px #ff4d6d;
+  }
+}
+
+/* === Entrance Animations === */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
 /*SixthSection ends*/
+
+
+
+
 /*Footer starts*/
 footer {
   margin-top: 100px;

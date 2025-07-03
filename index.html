@@ -436,32 +436,46 @@
         <section class="sixthSection">
             <div class="container">
                 <div class="row">
-                    <div class="contact-left">
+                    <!-- Left: Contact Info -->
+                    <div class="contact-left glass-glow-card animate-fade-up">
                         <h4 class="sub-title">Contact Me</h4>
-                        <p><img src="images/mail.gif" alt=""> -rishipatel9822@gmail.com</p><br>
-                        <p><img src="images/call.gif" alt=""> -9226156845</p>
+                        <p><img src="images/mail.gif" alt=""> rishipatel9822@gmail.com</p>
+                        <p><img src="images/call.gif" alt=""> 9226156845</p>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/rishi-patel-091226291"><img
-                                    src="images/LinkedIn.png.png" alt="linkedin.com"></a>
-                            <a href="https://github.com/Rishi9822"><img src="images/GitHub.png.png"
-                                    alt="github.com"></a>
+                                    src="images/LinkedIn.png.png" alt="LinkedIn"></a>
+                            <a href="https://github.com/Rishi9822"><img src="images/GitHub.png.png" alt="GitHub"></a>
                         </div>
-                        <a href="RishiCV.pdf" target="_blank" class="btn btn2">View Resume</a>
+                        <a href="RishiCV.pdf" target="_blank" class="btn btn2 neon-pulse">View Resume</a>
                     </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
 
+                    <!-- Right: Contact Form -->
+                    <div class="contact-right glass-glow-card animate-fade-up">
+                        <form name="submit-to-google-sheet" autocomplete="off">
+                            <div class="floating-label with-icon">
+                                <input type="text" name="Name" required />
+                                <label>Your Name</label>
+                                <i class="fa fa-user icon"></i>
+                            </div>
+                            <div class="floating-label with-icon">
+                                <input type="email" name="Email" required />
+                                <label>Your Email</label>
+                                <i class="fa fa-envelope icon"></i>
+                            </div>
+                            <div class="floating-label with-icon">
+                                <textarea name="Message" rows="6" required></textarea>
+                                <label>Your Message</label>
+                                <i class="fa fa-comment icon"></i>
+                            </div>
+                            <button type="submit" class="btn btn2 neon-pulse">Submit</button>
                         </form>
                         <span id="msg"></span>
                     </div>
                 </div>
             </div>
-
         </section>
+
+
 
 
 

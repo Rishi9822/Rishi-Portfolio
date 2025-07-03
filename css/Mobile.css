@@ -114,6 +114,8 @@
 
     /* nav ends */
 
+
+
     #home {
         flex-direction: column;
     }
@@ -154,13 +156,82 @@
         gap: 30px;
     }
 
-    .contact-left {
-        width: 80%;
+
+/* projects section starts */
+
+.projects-grid {
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .floating-buttons {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+    opacity: 1;
+    transform: none;
+  }
+
+  /* projects section ends */
+
+
+    /* certification section */
+    .cert-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
-    .contact-right {
-        width: 80%;
+    .cert-card {
+        width: 100%;
+        max-width: 250px;
+        height: 350px;
+        perspective: 1000px;
     }
+
+    .card-front,
+    .card-back {
+        height: 100%;
+        padding: 20px;
+        transform-style: preserve-3d;
+        margin-left: -15px;
+    }
+
+    .card-front img {
+        width: 60px;
+        margin-bottom: 15px;
+    }
+
+    .card-front h2 {
+        font-size: 1.1rem;
+    }
+
+    .card-front p {
+        font-size: 0.85rem;
+    }
+
+    .card-back p {
+        font-size: 0.85rem;
+        line-height: 1.4rem;
+    }
+
+    .verify-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* certification section */
+
+
+
+
+
+
+    /*Skills section */
 
     .skills-slider {
         gap: 15px;
@@ -173,6 +244,89 @@
     .scroll-btn {
         padding: 0;
     }
+
+    /*Skills section ends*/
+
+    /* service .leftSection */
+
+
+    .service-card {
+        width: 100%;
+        max-width: 70%;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    /* service section ends */
+
+
+
+    /* Contact me section */
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .glass-glow-card {
+        width: 75%;
+        max-width: 95%;
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    .sub-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .contact-left p {
+        font-size: 1rem;
+        gap: 5px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons a img {
+        width: 38px;
+        margin: 0 10px;
+    }
+
+    .btn.btn2 {
+        font-size: 18px;
+        padding: 12px 30px;
+        margin-top: 30px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .floating-label {
+        margin-bottom: 20px;
+    }
+
+    .floating-label input,
+    .floating-label textarea {
+        padding: 14px 45px 14px 16px;
+        font-size: 1rem;
+    }
+
+    .with-icon .icon {
+        right: 12px;
+        font-size: 1rem;
+    }
+
+    #msg {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* contact me section ends */
 
 
     /* footer */
