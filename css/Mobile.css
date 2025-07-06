@@ -39,7 +39,7 @@
         border-radius: 0 0 20px 20px;
         box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
         position: absolute;
-        top: 75px;
+        top: 65px;
         width: 100%;
         left: 0;
         z-index: 150;
@@ -50,7 +50,7 @@
 
     #menu-list li {
         width: 100%;
-        padding: 15px 0;
+        padding: 5px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         transition: background 0.3s ease;
         text-align: center;
@@ -328,29 +328,4 @@
 
     /* contact me section ends */
 
-
-    /* footer */
-    /* footer {
-        font-size: 10px;
-    }
-
-    .footer ul {
-        font-size: 10px;
-    }
-
-    .footer>div {
-        font-size: 20px;
-    }
-
-    div .footer-third ul li {
-        font-size: 10px;
-    }
-
-    footer .footer-third ul img {
-        width: 20px;
-    }
-
-    footer .footer .footer-third img:hover {
-        transform: translateY(-5px);
-    } */
 }

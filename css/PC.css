@@ -342,6 +342,14 @@ main hr {
   animation: fadeInUp 1s ease-out both;
 }
 
+/*This is to be removed */
+.project-card2{
+  filter: blur(10px);
+}
+.card-body2{
+  filter: blur(5px);
+}
+
 .card-glow {
   content: "";
   position: absolute;
@@ -614,11 +622,18 @@ main hr {
   height: 3px;
   background: red;
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: -4px;
-  transition: 0.5s;
+  transition: width 0.5s ease;
+  transform: translate(-50%);
 }
-
+.tab-titles span:hover{
+   transform: scale(1.5);
+  color: red;
+}
+.tab-links:hover::after{
+  width: 100%;
+}
 
 .tab-contents {
   display: none;
