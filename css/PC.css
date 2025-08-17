@@ -319,7 +319,7 @@ main hr {
 /*Second section starts*/
 
 .projects-section {
-  padding: 0 2rem;
+  padding: 0 1rem;
   color: white;
 }
 
@@ -335,6 +335,7 @@ main hr {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  justify-items: center;
 }
 
 .project-card {
@@ -342,13 +343,6 @@ main hr {
   animation: fadeInUp 1s ease-out both;
 }
 
-/*This is to be removed */
-.project-card2{
-  filter: blur(10px);
-}
-.card-body2{
-  filter: blur(5px);
-}
 
 .card-glow {
   content: "";
@@ -450,7 +444,7 @@ main hr {
 }
 
 .card-body {
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .project-header {
